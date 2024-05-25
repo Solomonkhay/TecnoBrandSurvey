@@ -11,24 +11,22 @@
 
 <body>
   
-  	<header class="header__container">
-  	<div>
-  		<img src="images-11.jpeg" alt="tecno logo" width="80px" height="40px">
-  	</div>
+  	<header class="header">
+<!-- two logo in header one right one left-->
+  		<img class="header__logo" src="images-2.png" alt="tecno logo" width="82px"
+  		height="42px">
   	
-  	<div>
-  		<img src="images-1.png" alt="survey logo" width="80px" height="40px">	
-  	</div>
+  		<img class="header__logo" src="images-1.png" alt="survey logo" >	
   </header>
 
 	<section>
 		
-		<div class="profile">
+		<div class="intro__container">
 		<figure>
 			<img src="spark.jpeg" alt="spark 20 pics">
 			<figcaption>SPARK 20 PRO <em>latest</em></figcaption>
 		</figure>
-		</div>
+		
 		
 		<div class="introduction">
 		<p >
@@ -46,10 +44,11 @@
     <p id="surveyPurpose">
       The purpose of the pricing survey for the new product launch is to gather valuable feedback and insights from customers regarding their pricing preferences, perceptions, and willingness to purchase the product at certain price points. This survey aims to help the organization understand customer expectations, price sensitivity, competitive positioning, and overall market demand for the new product, ultimately informing pricing strategies and decision-making for a successful product launch.
     </p>
+    </div>
    </div> 
    
    <div class="form">
-  <form action="" autocomplete="on">
+  <form action="" https://formspree.io/f/xgegbpew method="POST" autocomplete="on">
      
       		<!-- age selector -->
    <label for="age">Select your age:</label>
@@ -607,74 +606,83 @@
 </select>
      
     	 <!-- income level selector -->
-     <label for="age">Income Level:</label>
-    <input type="text" name="income level" id="income level" placeholder="10,000">
+     <label for="income level">Income Level:</label>
+    <input type="text" name="income level" id="income level"
+    placeholder="10,000" required>
      <br>
      
            <!-- Choice selector  -->
      <label for="brand">Are you a fans of tecno?</label>
-    <select >
+    <select id="fans?" name="fans?" >
        <option value="placeholder" >-select-</option>
        <option valuue="Yes">Yes</option>
        <option value="No">No</option>
     </select> 
      
            <!-- Product Perception: -->
-     <label for="">
+     <label for="buyer's assurance">
     	 How likely are you to purchase this product?</label>
-     <input type="text" class="Comment">
+     <input type="text" name="buyer's assurance" class="Comment">
      <br>
      
     	<label for="">What features of the product are most appealing to you?</label>
-     <input type="text" class="Comment">
+     <input type="text" name="features appealing" class="Comment">
     <br>
     
     <label for="">Do you think the product is innovative compared to similar products in the market?</label>
-     <input type="text" class="Comment">
+     <input type="text" name="feature   comparison" class="Comment">
      <br>
     
          <!-- Price Sensitivity: -->
     <label for="">What price range would you consider reasonable for this product?</label>
-     <input type="text" class="Comment">
+     <input type="text" name="price sensitive" class="Comment">
      <br>
      
     <label for="">Would you be willing to pay more for additional features or premium quality?</label>
-     <input type="text" class="Comment">
+     <input type="text" name="additional payment" class="Comment">
      <br>
      
     <label for="">  How does the expected price of this product compare to similar products you have purchased before?</label>
-     <input type="text" class="Comment">
+     <input type="text" name="price comparison" class="Comment">
      <br>
      
     		 <!-- Competitor Analysis: -->
  <label for="">  Are you aware of similar products from competitors?</label>
-     <input type="text" class="Comment">
+     <input type="text" name="competitor's awareness" class="Comment">
      <br>
 
  <label for="">  How does the price of this product compare to competitors' products?</label>
-     <input type="text" class="Comment">
+     <input type="text" name="competitor's price" class="Comment">
      <br>
 
  <label for="">  Would you choose this product over a competitor's product based on price?</label>
-     <input type="text" class="Comment">
+      <select id="fans?" name="choice base on pricei">
+       <option value="placeholder" >-select-</option>
+       <option valuue="Yes">Yes</option>
+       <option value="No">No</option>
+    </select> 
      <br>
      
           <!-- Purchase Intent: -->
  <label for="">  How likely are you to purchase this product if it is priced within your expected range?</label>
-     <input type="text"class="Comment">
+     <input type="text" name="purchase intent 1"class="Comment">
      <br>
 
-  <label for="">  Would you wait for a discount or sale to purchase this product?</label>
-     <input type="text" class="Comment">
+  <label for="">  Would you wait for a discount to purchase this product?</label>
+    <select id="fans?" name="fans?">
+       <option value="placeholder" >-select-</option>
+       <option valuue="Yes">Yes</option>
+       <option value="No">No</option>
+    </select> 
      <br>
   
  <label for="">  Are there any factors other than price that would influence your decision to purchase?</label>
-     <input type="text" class="Comment">
+     <input type="text"  name="factors influencing decision"class="Comment">
      <br>
  
 		 <!-- Feedback and Suggestions: -->
  <label for="">Any additional comments or suggestions regarding the pricing of this product?</label>
-     <input type="text" class="Comment">
+     <input type="text" name="additional comments"class="Comment">
      <br>
      
    <input type="submit" value="Submit">
